@@ -12,6 +12,7 @@ body {
     align-items: center;
 }
 
+/* ===== NAV SECTION ===== */
 nav {
     border-bottom: 1px solid black;
     background-color: hsl(0, 0%, 90%);
@@ -55,8 +56,39 @@ nav button {
 nav button:hover {
     background-color: black;
     color: white;
+} 
+nav #menu-icon {
+    display: none; 
+    margin: 0 16px;
+} 
+nav #menu-icon div {
+    background-color: black;
+    width: 24px;
+    height: 2px;
+    margin: 4px 0;
+    transition: all 0.4s ease;
 }
-
+nav #menu-icon.change #bar1 { 
+    transform: translate(0, 6px) rotate(-45deg); 
+}
+nav #menu-icon.change #bar2 { 
+    opacity: 0; 
+}
+nav #menu-icon.change #bar3 { 
+    transform: translate(0, -6px) rotate(45deg); 
+}
+@media (max-width: 800px) {
+    #menu-links {
+        display: none;
+    }
+    nav button {
+        display: none;
+    }
+    nav #menu-icon {
+        margin-left: auto;
+        display: block;
+    }
+}
 
 /* ===== FOOTER SECTION ===== */
 footer {
