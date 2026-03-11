@@ -47,7 +47,7 @@
 #calculator-container #input #summary {
     background-color: black;
     color: white;
-    margin-top: 20px;
+    margin-top: 32px;
     padding: 12px 16px;
     box-sizing: border-box;
     display: grid;
@@ -77,7 +77,7 @@
 #calculator-container #graph {
     grid-column: 2 / 3;
     width: 95%;
-    height: fit-content;
+    height: 50vh;
     margin-bottom: 3%;
     padding: 3%;
 }
