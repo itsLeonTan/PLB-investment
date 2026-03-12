@@ -9,7 +9,7 @@ const myChart = new Chart(ctx, {
         datasets: [{
             fill: false,
             lineTension: 0.4,
-            backgroundColor: "rgba(0,0,0,1.0)",
+            backgroundColor: "hsl(111, 41.1%, 30%)",
             borderColor: "rgba(0,0,0,0.2)",
             data: yValues
         }]

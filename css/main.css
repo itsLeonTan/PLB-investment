@@ -22,7 +22,7 @@ html {
     font-family: "Montserrat", sans-serif;
 }
 body {
-    background-color: hsl(0, 0%, 90%);
+    background-color: var(--white0);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -32,8 +32,7 @@ body {
 
 /* ===== NAV SECTION ===== */
 nav {
-    border-bottom: 1px solid black;
-    background-color: hsl(0, 0%, 90%);
+    background-color: var(--white0);
     width: 100%;
     height: 64px;
     display: grid;
@@ -42,6 +41,7 @@ nav {
     position: sticky;
     top: 0;
     z-index: 999; /* To ensure it stay above everything */
+    box-shadow: 0 4px 4px hsla(0, 0%, 0%, 0.1);
 }
 nav #growth {
     margin-left: 8px;
@@ -61,18 +61,22 @@ nav #menu-links a {
     margin: 0 4px;
     text-decoration: none;
     color: black;
+    border-radius: 8px;
 }
 nav #menu-links a:hover {
-    background-color: black;
+    background-color: var(--primary2);
     color: white;
 }
 nav button {
-    border: 1px solid black;
+    background-color: var(--primary2);
+    color: var(--white0);
     padding: 8px 16px;
     margin: 0 16px;
+    font-weight: bold;
+    border-radius: 16px;
 }
 nav button:hover {
-    background-color: black;
+    background-color: var(--primary0);
     color: white;
 } 
 nav #menu-icon {
@@ -118,7 +122,7 @@ footer {
     font-size: 12px;
 }
 #upper-footer-container {
-    border-top: 2px solid black;
+    background-color: var(--white1);
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -129,8 +133,12 @@ footer {
 }
 #upper-footer-container .quadrants a {
     display: block;
+    width: fit-content;
     margin: 4px 0;
     color: black;
+}
+#upper-footer-container .quadrants a:hover {
+    color: var(--primary4);
 }
 #upper-footer-container .quadrants h4 {
     margin: 4px;
@@ -150,12 +158,13 @@ footer {
     margin: 0 4px;
 }
 #lower-footer-container {
-    border-top: 2px solid black;
     width: 100%;
     height: 60px;
     display: grid;
     grid-template-columns: auto auto ;
     align-items: center;
+    background-color: var(--black1);
+    color: white;
 }
 #lower-footer-container p {
     margin-left: 8px;
@@ -163,5 +172,8 @@ footer {
 #lower-footer-container a {
     float: right;
     margin: 0 12px;
-    color: black;
+    color: white;
+}
+#lower-footer-container a:hover {
+    color: var(--primary4);
 }
