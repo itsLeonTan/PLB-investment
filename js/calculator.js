@@ -119,3 +119,13 @@ contribution = Number(contribution.value);
 interest = Number(interest.value);
 years = Number(years.value);
 fillChartAndTable(xValues, yValues);
+
+
+
+const img = document.getElementById("loonie");
+
+window.addEventListener("scroll", () => {
+    const scrollY = window.scrollY;
+    const rotation = scrollY * 0.5;
+    img.style.transform = `rotate(${rotation}deg)`;
+});

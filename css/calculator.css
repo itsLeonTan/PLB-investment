@@ -45,7 +45,7 @@
     padding: 12px;
     margin: 0;
     box-sizing: border-box;
-    border: 1px solid black;
+    font-size: 16px;
 }
 #calculator-container #input #summary {
     background-color: var(--black2);
@@ -128,10 +128,12 @@
     width: 100%;
     box-sizing: border-box;
     padding: 8% 12%;
+    position: relative;
 }
 #top-explainer h1 {
     margin: 0;
     margin-bottom: 24px;
+    color: var(--primary2);  
 }
 #top-explainer p {
     margin-bottom: 24px;
@@ -144,18 +146,32 @@
     margin: 0 1%;
     padding: 28px 36px;
     margin-top: 12px;
-    background-color: var(--white2);
+    background-color: var(--white1);
 }
 .lower-explainer h4 {
     margin: 0;
+    color: var(--primary2);  
 }
 .lower-explainer ul {
     margin: 0;
     padding-left: 0;
     list-style-position: inside;
 }
+.lower-explainer li::marker {
+    color: var(--primary4);  
+}
 .lower-explainer li {
     margin-top: 8px;
 }
+#explainer-container #loonie {
+    width: 200px;
+    translate: -100px -100px;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    left: 0%;
+    top: 20%;
 
+    transition: transform .01s ease;
+}
 
