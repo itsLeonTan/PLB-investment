@@ -1,39 +1,37 @@
  
 .investmentproduct-section{
-    border-top: 1px solid black;
-    border-bottom: 2px solid black;
-    padding-bottom: 40px;
-    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    padding: 80px 0;
+    background-color: var(--black0);
+    color: var(--white1);
+    text-align: center;
 }
 #investmentproduct-title > h1 {
-    font-family: "Montserrat", sans-serif;
-    text-align:center;
-    font-size: 50px;
-    font-weight: bold;
-    margin: 75px 0 20px 0;
+    font-size: 40px;
+    margin: 0 0 8px 0;
 }
 #investmentproduct-title > p {
-    font-family: "Montserrat", sans-serif;
-    text-align:center;
     font-size: 18px;
-    margin: 0 0 75px 0;
+    margin: 0;
     opacity: 60%;
     letter-spacing: 0.5px;
-    line-height: 2;
 }
 
+.portfolio-section {
+    width: 100%;
+    padding: 40px 0;
+    box-sizing: border-box;
+    background-color: var(--white2);
+}
+#portfolio-title {
+    text-align: center;
+}
 #portfolio-title > h1 {
-    font-family: "Montserrat", sans-serif;
-    text-align:center;
     font-size: 40px;
-    font-weight: bold;
-    margin: 75px 0 20px 0;
+    margin-bottom: 0;
 }
 #portfolio-title > p {
-    font-family: "Montserrat", sans-serif;
-    text-align:center;
     font-size: 20px;
-    margin: 0 0 30px 0;
     opacity: 60%;
     letter-spacing: 0.5px;
 }
@@ -42,99 +40,97 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     padding: 40px;
- 
+    box-sizing: border-box;
 }
 .portfolio-box {
-    border: 2px solid black;
+    width: 100%;
     padding: 30px;
     text-align:left;
-    font-family: "Montserrat", sans-serif;
     min-height: 500px;
     background-color:white;
     border-radius:10px;
     box-shadow:20px 20px 12px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
 }
-.portfolio-section {
-    padding-top: 40px;
-    border-top: 1px solid black;
-    border-bottom: 2px solid black;
-    background-color: rgba(250, 250, 250, 0.3);
-}
-
-#custom-title > h1 {
+/* Buttons moved here */
+#portfolio-choices .portplan{
+    display:inline-block;
+    width:100%;
+    height:50px;
+    background-color: var(--primary2);
+    border-radius: 16px;
+    color: white;
+    margin:30px auto;
     text-align:center;
-    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    line-height:12px;
 }
 
+
+.custom-section {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
 #custom-title > p {
-    text-align:center;
-    font-family: "Montserrat", sans-serif;
     opacity:60%;
 }
 #custom-builder {
     display:grid;
-    width:1000px;
+    width: 80%;
     height:150px;
     border: 2px solid black;
     align-items: center;
-    margin :50px auto;
+    margin: 50px auto;
     border-radius:10px;
+    box-sizing: border-box;
 }
 #custom-builderbox { 
-border: 2px solid black;
-margin: 50px auto; 
-align-items: center; 
-background-color: white;
-border-radius:10px;
-
+    border: 2px solid black;
+    margin: 50px auto; 
+    align-items: center; 
+    background-color: white;
+    border-radius:10px;
 }
 #custom-builderbox a {
     text-decoration: none;
     display:inline-block;
     width:800px;
     height:50px;
-    font-family: "Montserrat", sans-serif;
     font-size: 20px;
     opacity:85%;
     font-weight: normal;
     text-align:center;      
     line-height:50px;
-  
 }
 #custom-builderbox:hover > a {
     background-color:rgba(235, 235, 235, 0.3);
 }
+
 .start-section{
+    width: 100%;
     text-align:center;
     color:white;
-    padding-top: 40px;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    background-color: rgb(4, 25, 60);
+    padding: 40px 0 60px 0;
+    background-color: var(--primary1);
 }
 #start-box {
     display:inline-block;
     width:250px;
     height:50px;
-    border:2px solid black;
-    margin-top: 30px;
-    margin-bottom: 90px;
+    border-radius: 16px;
     text-decoration: none;
-    background-color:white;
-
-    font-family: "Montserrat", sans-serif;
+    color: black;
+    background-color: white;
     font-size: 15px;
     font-weight: bold;
-    text-align:center;      
     line-height:50px;
 }
-
 .start-section p {
     opacity:70%;
 }
-
 #start-box:hover {
-    background-color:rgba(235, 235, 235, 0.1);
+    background-color:var(--white4);
 }
 
 
@@ -145,21 +141,18 @@ grid-template-columns: 1fr auto;
 .return1 p:nth-child(even){
     text-align:right;
     font-size: 14px;
-    font-family: "Montserrat", sans-serif;
     font-weight:bolder;
     
 }
 .return2 p:nth-child(even){
     text-align:right;
     font-size: 14px;
-    font-family: "Montserrat", sans-serif;
     font-weight:bolder;
     
 }
 .return3 p:nth-child(even){
     text-align:right;
     font-size: 14px;
-    font-family: "Montserrat", sans-serif;
     font-weight:bolder;
     
 }
@@ -167,7 +160,7 @@ grid-template-columns: 1fr auto;
 /*portfolio percentage bars*/
 #portbar1-1{
     border:1px solid black;
-   display:grid;
+    display:grid;
     grid-template-columns: repeat(10,1fr) ;
     height: 10px;
     background-color: rgb(218, 230, 219);
@@ -177,7 +170,7 @@ grid-template-columns: 1fr auto;
     grid-template-columns: 1fr auto;
 }
 #bar-fill1-1 {
-   grid-column:1/8 ;
+    grid-column:1/8 ;
     background:rgb(34, 49, 34);
 }
 .bond-percentage1-1{
@@ -187,23 +180,20 @@ grid-template-columns: 1fr auto;
 }
 
 #portbar1-2{
-     border:1px solid black;
-   display:grid;
+    border:1px solid black;
+    display:grid;
     grid-template-columns: repeat(10,1fr) ;
     height: 10px;
     background-color: rgb(218, 230, 219);
 }
-
-
 .bar-header1-2{
     display:grid;
     grid-template-columns: 1fr auto;
 }
 #bar-fill1-2{
-   grid-column: 1/3;
+    grid-column: 1/3;
     background:rgb(34, 49, 34);
 }
-
 .bond-percentage1-2{
     font-size:16px;
     font-weight:lighter;
@@ -211,23 +201,20 @@ grid-template-columns: 1fr auto;
 }
 
 #portbar1-3{
-        border:1px solid black;
-   display:grid;
+    border:1px solid black;
+    display:grid;
     grid-template-columns: repeat(10,1fr) ;
     height: 10px;
     background-color: rgb(218, 230, 219);
 }
-
-
 .bar-header1-3{
     display:grid;
     grid-template-columns: 1fr auto;
 }
 #bar-fill1-3{
-   grid-column: 1/2;
+    grid-column: 1/2;
     background:rgb(34, 49, 34);
 }
-
 .bond-percentage1-3{
     font-size:16px;
     font-weight:lighter;
@@ -235,50 +222,41 @@ grid-template-columns: 1fr auto;
 }
 
 #portbar2-1 {
-        border:1px solid black;
-   display:grid;
+    border:1px solid black;
+    display:grid;
     grid-template-columns: repeat(10,1fr) ;
     height: 10px;
     background-color:rgb(218, 230, 219);
 }
-
-
 .bar-header2-1{
     display:grid;
     grid-template-columns: 1fr auto;
 }
 #bar-fill2-1 {
-   grid-column: 1/5;
+    grid-column: 1/5;
     background:rgb(34, 49, 34);
 }
-
-
-
 .bond-percentage2-1{
     font-size:16px;
     font-weight:lighter;
     opacity:80%;
 }
+
 #portbar2-2 {
-        border:1px solid black;
-   display:grid;
+    border:1px solid black;
+    display:grid;
     grid-template-columns: repeat(10,1fr) ;
     height: 10px;
     background-color:rgb(218, 230, 219);
 }
-
-
 .bar-header2-2{
     display:grid;
     grid-template-columns: 1fr auto;
 }
 #bar-fill2-2{
-   grid-column: 1/6;
+    grid-column: 1/6;
     background:rgb(34, 49, 34);
 }
-
-
-
 .bond-percentage2-2{
     font-size:16px;
     font-weight:lighter;
@@ -286,64 +264,54 @@ grid-template-columns: 1fr auto;
 }
 
 #portbar2-3 {
-        border:1px solid black;
-   display:grid;
+    border:1px solid black;
+    display:grid;
     grid-template-columns: repeat(10,1fr) ;
     height: 10px;
     background-color: rgb(218, 230, 219);
 }
-
-
 .bar-header2-3{
     display:grid;
     grid-template-columns: 1fr auto;
 }
 #bar-fill2-3{
-   grid-column: 1/2;
+    grid-column: 1/2;
     background:rgb(34, 49, 34);
 }
-
-
-
 .bond-percentage2-3{
     font-size:16px;
     font-weight:lighter;
     opacity:80%;
 }
+
 #portbar3-1 {
-        border:1px solid black;
-   display:grid;
+    border:1px solid black;
+    display:grid;
     grid-template-columns: repeat(10,1fr) ;
     height: 10px;
     background-color: rgb(218, 230, 219);
 }
-
-
 .bar-header3-1{
     display:grid;
     grid-template-columns: 1fr auto;
 }
 #bar-fill3-1 {
-   grid-column: 1/2;
+    grid-column: 1/2;
     background:rgb(34, 49, 34);
 }
-
-
-
 .bond-percentage3-1{
     font-size:16px;
     font-weight:lighter;
     opacity:80%;
 }
+
 #portbar3-2 {
-        border:1px solid black;
-   display:grid;
+    border:1px solid black;
+    display:grid;
     grid-template-columns: repeat(10,1fr) ;
     height: 10px;
     background-color:rgb(218, 230, 219);
 }
-
-
 .bar-header3-2{
     display:grid;
     grid-template-columns: 1fr auto;
@@ -352,9 +320,6 @@ grid-template-columns: 1fr auto;
    grid-column: 1/9;
     background:rgb(34, 49, 34);
 }
-
-
-
 .bond-percentage3-2{
     font-size:16px;
     font-weight:lighter;
@@ -363,68 +328,23 @@ grid-template-columns: 1fr auto;
 
 #portbar3-3 {
     border:1px solid black;
-   display:grid;
+    display:grid;
     grid-template-columns: repeat(10,1fr) ;
     height: 10px;
     background-color: rgb(218, 230, 219);
 }
-
-
 .bar-header3-3{
     display:grid;
     grid-template-columns: 1fr auto;
-    
 }
 #bar-fill3-3{
-   grid-column: 1/2;
+    grid-column: 1/2;
     background:rgb(34, 49, 34);
 }
-
-
-
 .bond-percentage3-3{
     font-size:16px;
     font-weight:lighter;
     opacity:80%;
-    
 }
-/*select plan buttons*/
-#portplan1{
-    
-    display:inline-block;
-    width:400px;
-    height:50px;
-    border:2px solid black;
-    margin:30px auto;
-    text-align:center;
-    font-family: "Montserrat", sans-serif;
-    font-size: 20px;
-     line-height:12px;
-  
-}
-#portplan2{
-    
-    display:inline-block;
-    width:400px;
-    height:50px;
-    border:2px solid black;
-    margin:30px auto;
-    text-align:center ;
-    font-family: "Montserrat", sans-serif;
-    font-size: 20px;
-    line-height:12px;
-   
-}
-#portplan3{
-    
-    display:inline-block;
-    width:400px;
-    height:50px;
-    border:2px solid black;
-    margin:30px auto;
-    text-align:center;
-    font-family: "Montserrat", sans-serif;
-    font-size: 20px;
-     line-height:12px;
-  
-}
+
+

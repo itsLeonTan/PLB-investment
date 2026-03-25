@@ -6,6 +6,9 @@
     background-color: var(--black2);
     color: var(--white0);
 }
+#intro-container h1 {
+    font-size: 40px;
+}
 
 #calculator-container {
     width: 100%;
@@ -34,6 +37,7 @@
 }
 #calculator-container #input h2 {
     margin: 0;
+    color: var(--primary2);
 }
 #calculator-container #input p {
     margin-top: 24px;
@@ -45,6 +49,7 @@
     padding: 12px;
     margin: 0;
     box-sizing: border-box;
+    border: 1px solid var(--primary5);
     font-size: 16px;
 }
 #calculator-container #input #summary {
@@ -87,6 +92,7 @@
 }
 #calculator-container #graph h2 {
     margin-top: 0;
+    color: var(--primary2);
 }
 #calculator-container #graph #chart-wrapper {
     width: 100%;
@@ -99,6 +105,7 @@
 }
 #calculator-container #table h2 {
     margin: 3%;
+    color: var(--primary2);
 }
 #calculator-container #table table {
     width: 100%;
