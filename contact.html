@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/contact.css"> 
         <script src="js/main.js"></script>
+        <script src="js/contact.js" defer></script>
     </head>
 
     <body>
@@ -79,7 +80,7 @@
     
             <div id="form-container">
                 <h2>Send us a Message</h2>
-                <form action="">
+                <form action="" onsubmit="verify()">
                     <div>
                         <label for="name">Full Name*</label>
                         <input type="text" name="name" placeholder="John Doe" required>
@@ -112,9 +113,9 @@
                         <label for="message">Message*</label>
                         <textarea name="message" placeholder="Tell us more about your inquiry..."></textarea>
                     </div>
+                    <button type="submit">Send Message</button>
                 </form>
 
-                <button onclick="">Send Message</button>
 
                 <div id="end-text">
                     <p>* Required fields</p>
