@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PLB</title>
+        <link rel="icon" type="image/x-icon" href="assets/growth.png">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/products.css"> 
+        <script src="js/main.js"></script>
+        
+    </head>
+
+    <body>
+        <nav>
+            <a id="growth" href="index.html">
+                <img src="assets/growth.png" alt="PLB Logo">
+            </a>
+
+            <h3>PLB</h3>
+            
+            <div id="menu-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="calculator.html">Calculator</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            
+            <button type="button" onclick="">Get Started</button>
+
+            <div id="menu-icon" onclick="menuFunction(this)">
+                <div id="bar1"></div>
+                <div id="bar2"></div>
+                <div id="bar3"></div>
+            </div>
+        </nav>
+
+
+        <!--   <div style="background-color: hsl(0, 0%, 100%);; height: 120vh; width: 100%;"> -->      
+        <section class="investmentproduct-section">  
+            <div id="investmentproduct-title">
+                <h1>Investment <u>Products</u></h1>
+                <p>
+                    Choose from our expertly crafted portfolios or create yourown custom allocation 
+                    to <br>match your investment goals.
+                </p>
+            </div> 
+        </section>
+
+        <section class="portfolio-section">
+            <div id="portfolio-title">
+                <h1>Pre-Configured Portfolios</h1>
+                <p>Select a portfolio that matches your risk tolerance and investment timeline.</p>
+            </div>
+
+            <div id="portfolio-choices">
+                <div class="portfolio-box">
+                    <picture>
+                        <img src="assets/ProductAssets/conservative.png" alt="Conservative Portfolio" height="50" width="50">
+                    </picture>
+
+                    <h2>Conservative</h2>
+                    <p>Low-risk portfolio focused on capital preservation and steady growth.</p>
+
+                    <div class ="return1">
+                        <p>Expected Return:</p>
+                        <p>3-5% annually</p>
+                        <p>Risk Level:</p>
+                        <p>Low</p>
+                    </div>
+                
+                    <div class="bar-header1-1">
+                        <p>Bonds</p>
+                        <p class="bond-percentage1-1">70%</p>
+                    </div>
+
+                    <div id="portbar1-1">
+                        <div id="bar-fill1-1"></div>
+                    </div>
+
+                    <div class="bar-header1-2">
+                        <p>Stocks</p>
+                        <p class="bond-percentage1-2">20%</p>
+                    </div>
+
+                    <div id="portbar1-2">
+                        <div id="bar-fill1-2"></div>
+                    </div>
+
+                    <div class="bar-header1-3">
+                        <p>Cash</p>
+                        <p class="bond-percentage1-3">10%</p>
+                    </div>
+
+                    <div id="portbar1-3">
+                        <div id="bar-fill1-3"></div>
+                    </div>
+                    
+                    <p>&check; 70% Government & Corporate Bonds</p>
+                    <p>&check; 20% Blue-chip Stocks</p>
+                    <p>&check; 10% Cash & Money Market</p>
+                    <p>&check; Low volatility</p>
+                    <p>&check; Steady divident income</p>
+                    <a href ="#">
+                        <div class="portplan">
+                            <p>Select Plan</p> 
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="portfolio-box">
+                    <picture>
+                        <img src="assets/ProductAssets/balanced.jpg" alt="Balanced Portfolio" height="50" width="50">
+                    </picture>
+
+                    <h2>Balanced</h2>
+                    <p>Moderate risk with balanced mix of growth and income investments.</p>
+                        
+                    <div class="return2">
+                        <p>Expected Return:</p>
+                        <p>6-8% annually</p>
+                        <p>Risk Level:</p>
+                        <p>Medium</p>
+                    </div>
+
+                    <div class="bar-header2-1">
+                        <p>Bonds</p>
+                        <p class="bond-percentage2-1">40%</p>
+                    </div>
+
+                    <div id="portbar2-1">
+                        <div id="bar-fill2-1"></div>
+                    </div>
+
+                    <div class="bar-header2-2">
+                        <p>Stocks</p>
+                        <p class="bond-percentage2-2">50%</p> 
+                    </div>
+
+                    <div id="portbar2-2">
+                        <div id="bar-fill2-2"></div>
+                    </div>
+                
+                    <div class="bar-header2-3">
+                        <p>Cash</p>
+                        <p class="bond-percentage2-3">10%</p>
+                    </div>  
+
+                    <div id="portbar2-3">
+                        <div id="bar-fill2-3"></div>
+                    </div>
+
+                    <p>&check; 50% Blue-chip Stocks</p>
+                    <p>&check; 40% Government & Corporate Bonds</p>
+                    <p>&check; 10% Cash & Money Market</p>
+                    <p>&check; Moderate volatility</p>
+                    <p>&check; Growth with Stability</p>
+                        
+                    <a href ="#">
+                        <div class="portplan">
+                            <p>Select Plan</p> 
+                        </div>
+                    </a>        
+                </div>
+
+                <div class="portfolio-box">
+                    <picture>
+                        <img src="assets/ProductAssets/aggressive.png" alt="Aggressive Portfolio" height="50" width="50">
+                    </picture>
+
+                    <h2>Aggressive</h2>
+                    <p>High-growth portfolio for investors seeking maximum returns</p>
+                    
+                    <div class ="return1">
+                        <p>Expected Return:</p>
+                        <p>10-15% annually</p>
+                        <p>Risk Level:</p>
+                        <p>High</p>
+                    </div>
+
+                    <div class="bar-header3-1">
+                        <p>Bonds</p>
+                        <p class="bond-percentage3-1">10%</p>
+                    </div>
+
+                    <div id="portbar3-1">
+                        <div id="bar-fill3-1"></div>
+                    </div>
+
+                    <div class="bar-header3-2">
+                        <p>Stocks</p>
+                        <p class="bond-percentage3-2">80%</p>
+                    </div>
+
+                    <div id="portbar3-2">
+                        <div id="bar-fill3-2"></div>
+                    </div>
+                
+                    <div class="bar-header3-3">
+                        <p>Cash</p>
+                        <p class="bond-percentage3-3">10%</p>
+                    </div>
+
+                    <div id="portbar3-3">
+                        <div id="bar-fill3-3"></div>
+                    </div>
+
+                    <p>&check; 80% Growth & Tech Stocks </p>
+                    <p>&check; 10% High-yield Bonds</p>
+                    <p>&check; 10% Cash for Opportunities</p>
+                    <p>&check; Higher volatility</p>
+                    <p>&check; Maximum growth potential</p>
+                    <a href ="#">
+                        <div class="portplan">
+                            <p>Select Plan</p> 
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div class="custom-section">
+
+    <div id="custom-title">
+        <h1>Build Your Own Portfolio</h1>
+        <p>Adjust your allocation and see expected returns update instantly</p>
+    </div>
+
+    
+    <div id="custom-builderbox">
+        <a href="#" onclick="activateCustomMode(); return false;">
+            Activate Custom Mode
+        </a>
+    </div>
+
+    <div id="custom-sliders" style="display: none;">
+    <div id="close-custom" style="text-align:center; margin-bottom:20px;">
+        <a href="#" onclick="deactivateCustomMode(); return false;">Close Custom Builder</a>
+    </div>
+        <div class="slider-row">
+            <label>Bonds</label>
+            <span id="bondsValue">40%</span>
+        </div>
+        <input type="range" id="bonds" min="0" max="100" value="40">
+
+        <div class="slider-row">
+            <label>Stocks</label>
+            <span id="stocksValue">40%</span>
+        </div>
+        <input type="range" id="stocks" min="0" max="100" value="40">
+
+        <div class="slider-row">
+            <label>Cash</label>
+            <span id="cashValue">20%</span>
+        </div>
+        <input type="range" id="cash" min="0" max="100" value="20">
+
+        <p id="total">Total: 100%</p>
+        <p id="return">Expected Return: --%</p>
+
+    </div>
+
+</div>
+<!--
+        <section class="start-section">
+            <div id="start-title">
+                <h1>Ready To Start Investing?</h1>
+                <p>Open an account with PLB today and start building your wealth with confidence.</p>
+                
+                <a href="#" id="start-box">Open An Account</a>
+            </div>
+        </section>
+    -->
+     <div class="scroll-text">
+    <div class="scroll-track">
+        <span class="scroll-item">READY TO START INVESTING?</span>
+        <span class="scroll-item">READY TO START INVESTING?</span>
+        <span class="scroll-item">READY TO START INVESTING?</span>
+        <span class="scroll-item">READY TO START INVESTING?</span>
+        <span class="scroll-item">READY TO START INVESTING?</span>
+
+       
+        <span class="scroll-item">READY TO START INVESTING?</span>
+        <span class="scroll-item">READY TO START INVESTING?</span>
+        <span class="scroll-item">READY TO START INVESTING?</span>
+        <span class="scroll-item">READY TO START INVESTING?</span>
+        <span class="scroll-item">READY TO START INVESTING?</span>
+    </div>
+</div>
+
+ <a href="#" class="openacc-button">Open An Account</a>
+
+</div>
+        <footer>
+            <div id="upper-footer-container">
+                <div class="quadrants">
+                    <h4><img src="assets/growth.png" alt="PLB Logo">PLB</h4>
+                    <p>Next-generation financial technology platform for modern businesses.</p>
+                    <div id="social-link">
+                        <a href=""><img src="assets/facebook.png" alt="Facebook"></a>
+                        <a href=""><img src="assets/twitter.png" alt="Twitter"></a>
+                        <a href=""><img src="assets/linkedin.png" alt="LinkedIn"></a>
+                        <a href=""><img src="assets/instagram.png" alt="Instagram"></a>
+                    </div>
+                </div>
+
+                <div class="quadrants">
+                    <p><b>Products</b></p>
+                    <a href="">Payment Processing</a>
+                    <a href="">Digital Wallets</a>
+                    <a href="">Analytics</a>
+                    <a href="">API Solutions</a>
+                </div>
+
+                <div class="quadrants">
+                    <p><b>Company</b></p>
+                    <a href="">About Us</a>
+                    <a href="">Careers</a>
+                    <a href="">Press</a>
+                    <a href="">Blog</a>
+                </div>
+
+                <div class="quadrants">
+                    <p><b>Support</b></p>
+                    <a href="">Help Center</a>
+                    <a href="">Documentation</a>
+                    <a href="">Contact Us</a>
+                    <a href="">Status</a>
+                </div>
+            </div>
+            <div id="lower-footer-container">
+                <p>&#169; 2026 PLB. All rights reserved.</p>
+                <div>
+                    <a href="">Privacy Policy</a>
+                    <a href="">Terms of Service</a>
+                    <a href="">Cookie Policy</a>
+                </div>
+            </div>
+        </footer>
+   <script src="js/products.js"></script>
+    </body>
+</html>
