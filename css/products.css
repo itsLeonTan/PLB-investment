@@ -1,3 +1,12 @@
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+
+
 body {
     overflow-x: hidden;
 } 
@@ -513,7 +522,9 @@ grid-template-columns: 1fr auto;
 }
 
 /* PHONE */
-@media (max-width: 600px) {
+
+/*
+@media (max-width: 768px) {
 
     #investmentproduct-title > h1,
     #portfolio-title > h1 {
@@ -537,5 +548,28 @@ grid-template-columns: 1fr auto;
     .portplan {
         height: 45px;
         font-size: 16px;
+    }
+}
+*/
+/* MOBILE FIXES */
+@media (max-width: 768px) {
+
+    .portfolio-box:hover {
+        transform: none;
+    }
+
+    .portfolio-box {
+        box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+    }
+
+    #portfolio-choices {
+        padding: 20px 12px;
+    }
+
+    #custom-builder,
+    #custom-builderbox,
+    #custom-sliders {
+        width: 100%;
+        max-width: 100%;
     }
 }
