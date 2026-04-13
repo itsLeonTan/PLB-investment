@@ -1,19 +1,8 @@
-
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-body {
-    overflow-x: hidden;
-} 
-html{
-    font-family: "Montserrat", sans-serif;
-}
-
+ 
 .investmentproduct-section{
     width: 100%;
     padding: 80px 0;
-    background-color: var(--black2);
+    background-color: var(--black0);
     color: var(--white1);
     text-align: center;
 }
@@ -48,7 +37,7 @@ html{
 }
 #portfolio-choices {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     padding: 40px;
     box-sizing: border-box;
@@ -63,17 +52,7 @@ html{
     box-shadow:20px 20px 12px rgba(0, 0, 0, 0.3);
     box-sizing: border-box;
 }
-.portfolio-box {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  
-}
-
-.portfolio-box:hover {
-    transform: scale(1.05); 
-    box-shadow: 25px 25px 18px rgba(0, 0, 0, 0.35); 
-    z-index: 2; 
-}
-
+/* Buttons moved here */
 #portfolio-choices .portplan{
     display:inline-block;
     width:100%;
@@ -106,92 +85,28 @@ html{
     border-radius:10px;
     box-sizing: border-box;
 }
-
-#close-custom a {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: var(--primary2);
-    color: white;
-    border-radius: 10px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 0.3s ease;
-}
-
-#close-custom a:hover {
-    transform: scale(1.02);
-}
-#custom-sliders {
-    width: 80%;
-    max-width: 500px;
-    margin: 40px auto;
-    padding: 20px;
-    background: rgb(255, 255, 255);
+#custom-builderbox { 
     border: 2px solid black;
-    border-radius: 12px;
-    font-family: Arial, sans-serif;
-    box-sizing: border-box;
-}
-
-
-.slider-row {
-
- 
-    margin-top: 15px;
-    font-size: 16px;
-}
-
-/* sliders */
-input[type="range"] {
-    width: 100%;
-    margin: 5px 0 10px 0;
-    accent-color: hsl(111, 41.1%, 25%);
-   
-}
-
-
-#total, #return {
-    margin-top: 10px;
-    font-size: 16px;
-}
-
-.slider-row span {
-    
-    font-weight: bold;
-}
-#custom-builderbox {
-     overflow: hidden;
-
     margin: 50px auto; 
-    background-color: var(--primary2);
-    border-radius: 10px;
-    width: 80%;           
-    max-width: 800px;
-    padding: 0;         
-    box-sizing: border-box;
-    color: white;
+    align-items: center; 
+    background-color: white;
+    border-radius:10px;
 }
-
 #custom-builderbox a {
-    display: block;
-    width: 100%;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
     text-decoration: none;
-
-    background-color: var(--primary2); 
-    color: white;                      
-
-    border-radius: 15px;
-    transition: all 0.3s ease;
-    margin: 0;
+    display:inline-block;
+    width:800px;
+    height:50px;
+    font-size: 20px;
+    opacity:85%;
+    font-weight: normal;
+    text-align:center;      
+    line-height:50px;
 }
-#custom-builderbox a:hover {
-  
- 
-    transform: scale(1.02);
+#custom-builderbox:hover > a {
+    background-color:rgba(235, 235, 235, 0.3);
 }
+
 .start-section{
     width: 100%;
     text-align:center;
@@ -220,12 +135,10 @@ input[type="range"] {
 
 
 .return1{
-    padding-top:10px;
  display:grid;
 grid-template-columns: 1fr auto;
 }
 .return1 p:nth-child(even){
-    
     text-align:right;
     font-size: 14px;
     font-weight:bolder;
@@ -237,21 +150,11 @@ grid-template-columns: 1fr auto;
     font-weight:bolder;
     
 }
-.return2{
-    padding-top:10px;
-    display:grid;
-    grid-template-columns: 1fr auto;
-}
 .return3 p:nth-child(even){
     text-align:right;
     font-size: 14px;
     font-weight:bolder;
     
-}
-.return3{
-    padding-top:10px;
-    display:grid;
-    grid-template-columns: 1fr auto;
 }
 
 /*portfolio percentage bars*/
@@ -445,106 +348,3 @@ grid-template-columns: 1fr auto;
 }
 
 
-.scroll-text {
-    width: 100%;
-    height: 100px; 
-    overflow: hidden;
-    align-items: center; 
-    padding: 0; 
-}
-.scroll-track {
-    white-space: nowrap;
-    animation: scroll 4s linear infinite;
-}
-.scroll-item {
-    font-size: 52px; 
-    font-weight: 700;
-    color: var(--primary2);
-    padding-right: 40px;
-    line-height: 1; 
-}
-
-@keyframes scroll {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-50%);
-    }
-}
-.openacc-button {
-    display: block;
-    width: 250px;
-    margin: 30px auto 60px auto;
-    padding: 14px 0;
-    text-align: center;
-    background: var(--primary2);
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 16px;
-    border-radius: 14px;
-}
-
-/* TABLET */
-@media (max-width: 900px) {
-    #investmentproduct-title > h1,
-    #portfolio-title > h1 {
-        font-size: 32px;
-    }
-    #portfolio-title > p {
-        font-size: 18px;
-    }
-    .portfolio-box {
-        padding: 20px;
-    }
-}
-
-/* PHONE */
-
-/*
-@media (max-width: 768px) {
-
-    #investmentproduct-title > h1,
-    #portfolio-title > h1 {
-        font-size: 26px;
-    }
-
-    #investmentproduct-title > p,
-    #portfolio-title > p {
-        font-size: 16px;
-    }
-
-    #portfolio-choices {
-        padding: 20px 10px;
-        gap: 20px;
-    }
-
-    .portfolio-box {
-        padding: 15px;
-    }
-
-    .portplan {
-        height: 45px;
-        font-size: 16px;
-    }
-}
-*/
-/* MOBILE FIXES */
-@media (max-width: 768px) {
-    .portfolio-box:hover {
-        transform: none;
-    }
-    .portfolio-box {
-        box-shadow: 0 8px 12px rgba(0,0,0,0.2);
-    }
-    #portfolio-choices {
-        padding: 20px 12px;
-    }
-    #custom-builder,
-    #custom-builderbox,
-    #custom-sliders {
-        width: 100%;
-        max-width: 100%;
-    }
-}
