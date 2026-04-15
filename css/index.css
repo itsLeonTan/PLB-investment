@@ -1,15 +1,15 @@
 
-#intro {                                         /* first class section under the main tag*/
+#intro {
 	text-align: center; 
 	width: 100%;
-	height: 50vh;
-	display: grid;
 }
 #intro > div {
 	margin: auto 0;
+	padding: 60px 60px;
 }
 #intro > div h1 {
 	font-size: 40px;
+	margin-top: 0;
 }
 #intro > div #FT-text {
 	color: var(--primary2);
@@ -28,13 +28,21 @@
 #intro div > a:hover {
 	background-color: var(--primary0);
 }
+@media (max-width: 380px) {
+	#intro div > a {
+		display: block;
+		margin-bottom: 8px;
+	}
+}
 
 
 #about {
 	background-color: var(--white2);
 	width: 100%;
 	box-sizing: border-box;
-	padding: 48px 16px;
+	padding: 0 16px;
+	display: grid;
+	place-items: center;
 }
 #about #top {
 	text-align: center;
@@ -54,7 +62,6 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	gap: 16px;
-	justify-self: center;
 }
 #about #values-container .boxes {
 	background-color: var(--white0);
@@ -86,13 +93,24 @@
 	color: var(--primary3);
 	font-size: 20px;
 }
+@media (max-width: 670px) {
+	#about #values-container {
+		grid-template-columns: 1fr;
+	}
+}
+@media (max-width: 480px) {
+	#about #top {
+		padding: 40px 40px;
+	}
+}
 
 
 #meet-container {
 	background-color: var(--white0);
 	width: 100%;
-	justify-items: center;
 	padding: 48px 0;
+	display: grid;
+	place-items: center;
 }
 #meet-intro {
 	text-align: center;
@@ -109,6 +127,7 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	gap: 28px;
+	place-items: center;
 	padding: 30px;
 	box-sizing: border-box;
 }
@@ -122,6 +141,15 @@
 #owners-container div img {
 	width: 100%;
 }
+@media (max-width: 790px) {
+	#owners-container {
+		grid-template-columns: 1fr;
+	}
+	#owners-container div {
+		width: min(100%, 320px);
+	}
+}
+
 #stats-container {
 	background-color: var(--primary9);
 	width: 100%;
@@ -132,10 +160,16 @@
 	justify-items: center;
 	align-items: center;
 	text-align: center;
+	row-gap: 32px;
 }
 #stats-container div h2,
 #stats-container div p {
 	margin: 0;
+}
+@media (max-width: 600px) {
+	#stats-container {
+		grid-template-columns: 1fr 1fr;
+	}
 }
 
 
