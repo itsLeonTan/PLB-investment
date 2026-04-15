@@ -447,23 +447,20 @@ grid-template-columns: 1fr auto;
 
 .scroll-text {
     width: 100%;
-    height: 100px; 
     overflow: hidden;
-    align-items: center; 
-    padding: 0; 
 }
 .scroll-track {
+    display: inline-block;
     white-space: nowrap;
-    animation: scroll 4s linear infinite;
+    animation: scroll 8s linear infinite;
 }
 .scroll-item {
-    font-size: 52px; 
+    display: inline-block;
+    font-size: 40px; 
     font-weight: 700;
     color: var(--primary2);
     padding-right: 40px;
-    line-height: 1; 
 }
-
 @keyframes scroll {
     from {
         transform: translateX(0);
