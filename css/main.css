@@ -130,7 +130,6 @@ nav {
 
 #nav-bottom {
     display: none;
-    border: 2px dotted red;
     box-sizing: border-box;
     height: calc(100vh - 64px);
     place-items: center;
