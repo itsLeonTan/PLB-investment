@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account - PLB</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/growth.png">
+    <link rel="stylesheet" href="css/main.css">
+<link rel ="stylesheet" href="css/account.css">
+
+    
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">&#8592; Back to Home</a>
+    </nav>
+
+    <div id="container">
+        <div id="form-box">
+
+            <h1>Create Account</h1>
+            <p>Join PLB and start managing your finances</p>
+
+           <form id="signup-form" onsubmit="return createAccount()">
+
+                <input type="text" placeholder="Full Name*" required>
+                <input type="email" placeholder="Email Address*" required>
+                <input type="password" placeholder="Password*" required>
+                <input type="password" placeholder="Confirm Password*" required>
+                <input type="text" placeholder="Phone Number">
+
+                <button type="submit">Create Account</button>
+
+            </form>
+
+            <p id="login-text">
+                Already have an account? <a href="#">Sign in</a>
+            </p>
+
+        </div>
+    </div>
+
+    <script>
+        function createAccount() {
+            alert("Account created");
+            return false;
+        }
+        function createAccount() {
+    alert("Account created");
+
+    
+    document.getElementById("signup-form").reset();
+
+    return false;
+}
+    </script>
+
+</body>
+</html>
