@@ -1,15 +1,4 @@
 
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-body {
-    overflow-x: hidden;
-} 
-html{
-    font-family: "Montserrat", sans-serif;
-}
-
 .investmentproduct-section{
     width: 100%;
     padding: 80px 0;
