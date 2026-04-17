@@ -1,3 +1,6 @@
+
+document.getElementById("lastUpdated").textContent = document.lastModified;
+
 let menuOpen = false;
 function menuFunction(x) {
     menuOpen = !menuOpen;
@@ -13,3 +16,5 @@ function menuFunction(x) {
     }
     
 }
+
+

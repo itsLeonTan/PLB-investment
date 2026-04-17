@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,7 @@
         <link rel="icon" type="image/x-icon" href="assets/growth.png">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/index.css"> 
-        <script src="js/main.js"></script>
+        <script src="js/main.js" defer></script>
     </head>
     
     <body>
@@ -66,7 +66,7 @@
                     
             <div id="values-container">
                 <div class="boxes">
-                    <img src="assets/IndexAssets/Black and white comp.png" alt="target">
+                    <img src="assets/IndexAssets/Compass.png" alt="target">
                     <h4>Our Mission</h4>
                     <p> 
                         To democratize access to 
@@ -76,7 +76,7 @@
                 </div>
                 
                 <div class="boxes">
-                    <img src="assets/IndexAssets/Lightning symbol.png" alt="lightning">
+                    <img src="assets/IndexAssets/Lightning.png" alt="lightning">
                     <h4> Innovation first</h4>
                     <p>
                         We leverage cutting edge technology to 
@@ -85,7 +85,7 @@
                 </div>
 
                 <div class="boxes">
-                    <img src="assets/IndexAssets/Building icon.png" alt="building">
+                    <img src="assets/IndexAssets/Building.png" alt="building">
                     <h4>Trusted platform</h4>
                     <p>
                         Built on a foundatioon of security,
@@ -205,7 +205,7 @@
                 </div>
             </div>
             <div id="lower-footer-container">
-                <p>&#169; 2026 PLB. All rights reserved.</p>
+                <p>&#169; 2026 PLB. All rights reserved. <br>Last updated: <span id="lastUpdated"></span></p>
                 <div>
                     <a href="">Privacy Policy</a>
                     <a href="">Terms of Service</a>
@@ -214,22 +214,17 @@
             </div>
         </footer>
         <script>
-        let time =1500;
-        function updateTimer() {
-    let m = Math.floor(time / 60); 
-    let s = time % 60;             
+            let time =1500;
+            function updateTimer() {
+                let m = Math.floor(time / 60);
+                let s = time % 60; 
 
-    if (s < 10) s = "0" + s;
+                if (s < 10) s = "0" + s;
+                document.getElementById("end-time").innerText =  m + ":" + s + " minutes left";
+                if (time > 0) { time-- };
+            }
+            setInterval(updateTimer, 1000);
 
-    document.getElementById("end-time").innerText =  m + ":" + s + " minutes left";
-
-    if (time > 0) 
-    {
-        time--
-    };
-}
-
-setInterval(updateTimer, 1000);
         </script>
     </body>
 </html>
