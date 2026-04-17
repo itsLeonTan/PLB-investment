@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLB</title>
+    <link rel="icon" type="image/x-icon" href="assets/growth.png">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css"> 
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+<nav>
+    <div id="nav-top">
+        <a id="growth" href="index.html">
+            <img src="assets/growth.png" alt="PLB Logo">
+        </a>
+        <h3>PLB</h3>
+
+        <div id="menu-links">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="calculator.html">Calculator</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <button type="button" onclick="window.location.href='account.html'">Get Started</button>
+
+        <div id="menu-icon" onclick="menuFunction(this)">
+            <div id="bar1"></div>
+            <div id="bar2"></div>
+            <div id="bar3"></div>
+        </div>
+    </div>
+
+    <div id="nav-bottom">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="calculator.html">Calculator</a>
+        <a href="contact.html">Contact</a>
+        <a href="account.html" id="getStarted">Get Started</a>
+    </div>
+</nav>
+
+<section id="intro">
+    <video autoplay muted loop playsinline id="background-video">
+        <source src="assets/IndexAssets/Cliff.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div>
+        <h1>The Future of <span id="FT-text">Financial Technology</span></h1>
+        <p>
+            PLB provides cutting edge financial solutions designed to manage,
+            invest and grow their capital with confidence
+        </p>
+
+        <a href="account.html">Get Started</a>
+        <a href="products.html">Learn More</a>
+    </div>
+</section>
+
+<!-- rest unchanged -->
+
+<script>
+let time = 1500;
+
+function updateTimer() {
+    let m = Math.floor(time / 60);
+    let s = time % 60;
+
+    if (s < 10) s = "0" + s;
+
+    document.getElementById("end-time").innerText =
+        m + ":" + s + " minutes left";
+
+    if (time > 0) {
+        time--;
+    }
+}
+
+setInterval(updateTimer, 1000);
+</script>
+
+</body>
+</html>
